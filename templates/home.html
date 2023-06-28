@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Tournament</title>
+    <style>
+      /* Set background color and text color */
+      body {
+        background-color: #f1f1f1;
+        color: #333;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Main container */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 200px;
+        text-align: center;
+      }
+
+      /* Page title */
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      /* Cricket image */
+      .cricket-image {
+        margin-bottom: 40px;
+      }
+
+      /* Simulate match button */
+      .simulate-button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .simulate-button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the Cricket Tournament!</h1>
+      <p>Click the button below to simulate a match:</p>
+      <form action="/simulate" method="POST">
+        <button class="simulate-button" type="submit">Simulate Match</button>
+      </form>
+    </div>
+  </body>
+</html>

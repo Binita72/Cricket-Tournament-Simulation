@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Simulation Result</title>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .heading {
+        color: #004ba0;
+        text-align: center;
+      }
+
+      .result-heading {
+        color: #004ba0;
+      }
+
+      .result {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .team {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .score {
+        font-size: 18px;
+      }
+
+      .winner {
+        font-size: 18px;
+        font-weight: bold;
+        color: green;
+      }
+
+      .commentary-heading {
+        color: #004ba0;
+        margin-top: 20px;
+      }
+
+      .commentary ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .commentary li {
+        font-size: 16px;
+        margin-bottom: 5px;
+        line-height: 1.4;
+      }
+
+      .back-button button {
+        padding: 10px 20px;
+        background-color: #004ba0;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="heading">Cricket Simulation Result</h1>
+      <div class="result">
+        <h2 class="result-heading">Match Result:</h2>
+        <p class="team">{{ match_result.team1 }} vs {{ match_result.team2 }}</p>
+        <p class="score">
+          Score: {{ match_result.score1 }} - {{ match_result.score2 }}
+        </p>
+        <p class="winner">Winner: {{ match_result.winner }}</p>
+      </div>
+      <div class="commentary">
+        <h2 class="commentary-heading">Commentary:</h2>
+        <p>{{ match_result['commentary'] }}</p>
+      </div>
+      <div class="back-button">
+        <button onclick="goBack()">Back</button>
+      </div>
+    </div>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>
