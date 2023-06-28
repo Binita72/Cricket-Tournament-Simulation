@@ -1,4 +1,4 @@
-# Cricket-Tournament-Simulatio
+# Cricket-Tournament-Simulation
 
 This is a simple web application that simulates a cricket match using Python and Flask. It allows you to start a match between two teams and see the result.
 
